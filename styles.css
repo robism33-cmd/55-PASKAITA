@@ -10,8 +10,10 @@ body {
 }
 #header {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 50vw;
 }
 #title {
   display: flex;
@@ -45,10 +47,12 @@ body {
   background: #170e31b8;
 }
 #contentP {
+  width: 100%;
   color: white;
   font-size: 24px;
 }
 #subtitle {
   color: white;
   font-size: 24px;
+  width: 100%;
 }

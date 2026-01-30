@@ -3,8 +3,10 @@ const submitBtn = document.getElementById("SubmitBtn");
 const contentP = document.getElementById("contentP");
 const subtitle = document.getElementById("subtitle");
 let randomDec = Math.floor(Math.random() * 100 + 1);
+
 let count = 0;
 submitBtn.addEventListener("click", function () {
+  // alert(`atsitiktinis skaičius yra ${randomDec}`);
   const userValue = Number(variable.value);
   if (!Number.isFinite(userValue)) {
     contentP.textContent = "Įveskite skaičių!";
@@ -12,6 +14,10 @@ submitBtn.addEventListener("click", function () {
     return;
   }
   count++;
+  // alert(`paspaudimu skaicius ${count}`);
+  alert(
+    `vartotojo reiksme ${userValue} atsitiktinis skaicius ${randomDec} paspaudimu skaicius ${count}`
+  );
   if (userValue > randomDec) {
     contentP.textContent = `Deja, Neatspėjote!`;
     subtitle.textContent = `Skaičius yra didesnis spėkite dar kartą`;
