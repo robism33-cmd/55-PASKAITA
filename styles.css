@@ -8,68 +8,84 @@ body {
   align-items: center;
   gap: 5%;
 }
-#header {
+#bigBox {
   display: flex;
-  display: inline;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#title {
-  display: flex;
-  /* flex-direction: column; */
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end;
-  margin-left: 80%;
-  margin-bottom: 80%;
+  align-items: flex-start;
+  width: 100%;
 }
-
+#card {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 2%;
+  width: 50%;
+}
+#midlImg {
+  align-items: center;
+}
 #content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 50%;
+  height: 100%;
   text-align: center;
   font-size: 4rem;
+  gap: 20px;
+  padding-right: 2%;
+}
+
+#displayCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+#info {
+  font-size: 8rem;
 }
 #subInfo {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   font-size: 4rem;
 }
 #submitBtn {
-  width: 15%;
-  font-size: 2rem;
-  height: 10%;
+  border: radius 8px;
+  width: 25%;
+  font-size: 4rem;
+  height: 100%;
 }
 #userInput {
-  width: 15%;
+  width: 25%;
   color: white;
-  font-size: 2rem;
+  height: 100%;
+  font-size: 4rem;
+  padding-left: 1%;
+  text-align: left;
   background: #170e31b8;
 }
 #contentP {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
   width: 100%;
-  margin-left: 90%;
   color: white;
-  font-size: 24px;
+  font-size: 4rem;
 }
 #subtitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-left: 90%;
   color: white;
-  font-size: 24px;
+  font-size: 4rem;
   width: 100%;
+}
+#mark1 {
+  background-color: yellow;
+  color: #000;
+}
+
+#mark2 {
+  background-color: red;
+}
+#mark3 {
+  background-color: green;
+  color: #000;
 }

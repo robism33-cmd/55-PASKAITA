@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random number</title>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -12,18 +16,28 @@
       <div id="sidebar">
         <img src="BigNumber.png" alt="129" />
       </div>
-      <div id="content">
-        <h1 id="info">Spėkite skaičių tarp 1 ir 100:</h1>
-        <input type="number" id="userInput" min="1" max="100" />
-        <p id="subInfo">Įveskite skaičių nuo 1 iki 100:</p>
+      <div id="bigBox">
+        <div id="card">
+          <div id="midlImg"></div>
+          <div id="content">
+            <h1 id="contentP"></h1>
+            <p id="subtitle"><span id="mark1"></span></p>
+          </div>
+        </div>
+        <div id="displayCard">
+          <div id="hiding">
+            <h1 id="info">Spėkite skaičių tarp 1 ir 100:</h1>
+            <input
+              type="number"
+              id="userInput"
+              min="1"
+              max="100"
+              placeholder="pvz., 100"
+            />
+            <p id="subInfo">Įveskite skaičių nuo 1 iki 100:</p>
+          </div>
+        </div>
         <button id="submitBtn">Spėti</button>
-      </div>
-    </div>
-    <div id="header">
-      <!-- <div id="sideImg"><img src="careface.png" alt="care face" /></div> -->
-      <div id="title">
-        <h1 id="contentP"></h1>
-        <p id="subtitle"></p>
       </div>
     </div>
   </body>
