@@ -9,12 +9,16 @@ const content = document.getElementById("content");
 const midlImg = document.getElementById("midlImg");
 const card = document.getElementById("card");
 const hiding = document.getElementById("hiding");
-let randomDec = Math.floor(Math.random() * 100 + 1);
 
+let randomDec = Math.floor(Math.random() * 100 + 1);
 let count = 0;
 
-const winSound = new Audio("win.mp3");
+const winSound = new Audio("phatphrogstudiocom-victory-fanfare-2-474663.mp3");
 winSound.preload = "auto";
+winSound.volume = 1;
+winSound.addEventListener("error", () =>
+  console.log("KLAIDA: neranda win.mp3 (patikrink kelią)")
+);
 
 submitBtn.addEventListener("click", function () {
   // alert(`atsitiktinis skaičius yra ${randomDec}`);
